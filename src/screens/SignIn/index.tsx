@@ -9,7 +9,7 @@ import { styles } from './styles'
 export default function SignIn() {
   return (
     <View style={styles.container}>
-      <StatusBar backgroundColor={theme.colors.background} />
+      <StatusBar backgroundColor={theme.colors.secondary100} />
       <Image 
         source={require('../../assets/illustration.png')} 
         style={styles.image}
@@ -17,15 +17,17 @@ export default function SignIn() {
       />
       <View style={styles.content}>
         <Text style={styles.title}>
+          Conecte-se e {`\n`}
           Organize suas {`\n`}
           jogatinas.
         </Text>
-        <Text style={styles.subTitle}>
+        <Text style={styles.subtitle}>
           Crie grupos para jogar seus games {`\n`}
           favoritos com sues amigos.
         </Text>
+        <ButtonIcon title="Entrar com discord." activeOpacity={0.7} />
       </View>
-      <ButtonIcon title="Entrar com discord." activeOpacity={0.7} />
+      
     </View>
   )
 }
